@@ -1,4 +1,4 @@
-# MERN Challenge: Car Search Engine
+# MERN Challenge: Book Search Engine
 
 ## Description
 
