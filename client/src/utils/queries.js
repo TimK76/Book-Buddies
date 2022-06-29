@@ -94,27 +94,27 @@ export const QUERY_ME = gql`
     }
 `;
 
-// export const QUERY_ME_BASIC = gql`
-//   {
-//     me {
-//       _id
-//       username
-//       email
-//       friendCount
-//       friends {
-//         _id
-//         username
-//       }
-//     }
-//   }
-// `;
+export const QUERY_ME_BASIC = gql`
+  {
+    me {
+      _id
+      username
+      email
+      friendCount
+      friends {
+        _id
+        username
+      }
+    }
+  }
+`;
 
-// export const QUERY_FRIENDLIST = gql`
-// {
-//     friendlist {
-//     _id
-//     username
-//     email
-//   }
-// }
-// `;
+export const QUERY_FRIENDLIST = gql`
+{
+    friendlist {
+    _id
+    username
+    email
+  }
+}
+`;
