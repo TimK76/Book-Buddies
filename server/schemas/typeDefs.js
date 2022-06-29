@@ -42,6 +42,13 @@ const typeDefs = gql`
     token: ID!
     user: User
   }
+
+  type Reaction {
+    _id: ID
+    reactionBody: String
+    createdAt: String
+    username: String
+  }
 `;
 
 module.exports = typeDefs;
