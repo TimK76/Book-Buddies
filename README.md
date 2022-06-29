@@ -10,7 +10,7 @@ To use this application, a reader can click on the following link:
 
 ## Usage
 
-If you are an avid reader and you love books, you can use this application to search for and save your favorite books using your account credentials.  You can also comment on your favorite books and share them with your friends.  Our application will make ever reader's visit to a book store more worthwhile!
+If you are an avid reader and you love books, you can use this application to search for and save your favorite books using your account credentials.  You can also comment on your favorite books and share them with your friends.  Our application will make every reader's visit to a book store more worthwhile!
 
 ## Credits
 
