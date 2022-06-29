@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { useMutation } from '@apollo/client';
-import { ADD_REACTION } from '../../utils/mutations';
+import { ADD_REACTION } from '../utils/mutations';
 
 const ReactionForm = ({ commentId }) => {
   const [reactionBody, setBody] = useState('');
@@ -22,7 +22,7 @@ const ReactionForm = ({ commentId }) => {
 
     try {
       await addReaction({
-        variables: { reactionBody, thoughtId },
+        variables: { reactionBody, commentId },
       });
 
       // clear form value
