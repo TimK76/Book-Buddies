@@ -4,7 +4,8 @@ import { ApolloProvider } from "@apollo/client";
 import ApolloClient from "apollo-boost";
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
-import SingleComment from './pages/SingleComment';
+import SingleComment from './pages/SingleComment'; 
+// import Profile from './pages/Profile';
 import Navbar from './components/Navbar';
 // import FriendList from './components/FriendList';
 
@@ -31,6 +32,7 @@ function App() {
             <Route exact path="/" component={SearchBooks} />
             <Route exact path="/saved" component={SavedBooks}/>
             <Route exact path="/single" component={SingleComment}/>
+            {/* <Route exact path="/profile" component={Profile}/> */}
             <Route render={() => <h1 className="display-2">Wrong page!</h1>} />
           </Switch>
         </>

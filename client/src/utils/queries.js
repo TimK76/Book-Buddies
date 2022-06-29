@@ -92,7 +92,6 @@ export const QUERY_ME = gql`
         link
       }
     }
-  }
 `;
 
 // export const QUERY_ME_BASIC = gql`
