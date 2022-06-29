@@ -1,50 +1,21 @@
-# MERN Challenge: Car Search Engine
+# Book Buddies
 
 ## Description
 
-This Google Books API search engine application was originally built using the MERN stack, with a React front end, MongoDB database, and Node.js/ Express.js server and API.  My challenge this week was to take this fully functioning search engine built with a RESTful API and refactor it to be a GraphQL API built with Apollo Server. The refactored app retains it's original appearance and functionality upon re-deployment. Check it out below!
+Our application allows an avid reader to search for and save a list of their favorite books.  We used a Google Books API search engine to generate the list of books that a reader can view and save by using their account credentials.  This application was made using MERN: a combination of MongoDB, Express.js, React, and Node.js, where React was used to build the front end of the application, MongoDB was used as a database, and Node.js as well as Express.js were a part of the server.  We also refactored the application to be a GraphQL API built with an Apollo Server  Basically, our application is like an IMDB for books.  It allows readers to comment on thier favorite books and share them with their friends.
 
-## User Story
+## Installation
 
-AS AN avid reader  
-I WANT to search for new books to read  
-SO THAT I can keep a list of books to purchase  
+To use this application, a reader can click on the following link:
 
-## Acceptance Criteria
+## Usage
 
-GIVEN a book search engine  
-WHEN I load the search engine  
-THEN I am presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button  
-WHEN I click on the Search for Books menu option  
-THEN I am presented with an input field to search for books and a submit button  
-WHEN I am not logged in and enter a search term in the input field and click the submit button  
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site  
-WHEN I click on the Login/Signup menu option  
-THEN a modal appears on the screen with a toggle between the option to log in or sign up  
-WHEN the toggle is set to Signup  
-THEN I am presented with three inputs for a username, an email address, and a password, and a signup button  
-WHEN the toggle is set to Login  
-THEN I am presented with two inputs for an email address and a password and login button  
-WHEN I enter a valid email address and create a password and click on the signup button  
-THEN my user account is created and I am logged in to the site  
-WHEN I enter my account’s email address and password and click on the login button  
-THEN I the modal closes and I am logged in to the site  
-WHEN I am logged in to the site  
-THEN the menu options change to Search for Books, an option to see my saved books, and Logout  
-WHEN I am logged in and enter a search term in the input field and click the submit button  
-THEN I am presented with several search results, each featuring a book’s title, author, description, image, and a link to that book on the Google Books site and a button to save a book to my account  
-WHEN I click on the Save button on a book  
-THEN that book’s information is saved to my account  
-WHEN I click on the option to see my saved books
-THEN I am presented with all of the books I have saved to my account, each featuring the book’s title, author, description, image, and a link to that book on the Google Books site and a button to remove a book from my account  
-WHEN I click on the Remove button on a book  
-THEN that book is deleted from my saved books list  
-WHEN I click on the Logout button  
-THEN I am logged out of the site and presented with a menu with the options Search for Books and Login/Signup and an input field to search for books and a submit button 
+If you are an avid reader and you love books, you can use this application to search for and save your favorite books using your account credentials.  You can also comment on your favorite booksand share them with your friends.  Our application will make ever reader's visit to a book store more worthy.  
 
-## Website Link
+## Credits
 
-Check out the deployed here: https://ancient-depths-90424.herokuapp.com
+Timothy Knight, Jessica Kallberg, Ryan Zubayer, Ruchi Vaishnav
 
-## Contact
-[Ryan Zubayer on GitHub](https://github.com/ryanzubayer)
+## License
+
+MIT License
