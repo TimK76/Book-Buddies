@@ -19,6 +19,15 @@ export const GET_ME = gql`
     }
   }
 `;
+export const GET_friendlist = gql`
+{
+    friendlist {
+    _id
+    username
+    email
+  }
+}
+`;
 
 export const QUERY_COMMENT = gql`
   query comment($id: ID!) {
