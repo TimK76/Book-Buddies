@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, Comment } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
 
@@ -13,6 +13,25 @@ const resolvers = {
     
       throw new AuthenticationError('Not logged in');
     },
+    users: async () => {
+      return User.find()
+        .select('-__v -password')
+        .populate('comments')
+        .populate('friends');
+    },
+    user: async (parent, { username }) => {
+      return User.findOne({ username })
+        .select('-__v -password')
+        .populate('friends')
+        .populate('comments');
+    },
+    comments: async (parent, { username }) => {
+      const params = username ? { username } : {};
+      return Comment.find(params).sort({ createdAt: -1 });
+    },
+    comment: async (parent, { _id }) => {
+      return Comment.findOne({ _id });
+    }
 },
 
   Mutation: {
@@ -65,6 +84,21 @@ const resolvers = {
 
       throw new AuthenticationError("You have to be logged in!");
     }
+  },
+  addComment: async (parent, args, context) => {
+    if (context.user) {
+      const comment = await Comment.create({ ...args, username: context.user.username });
+
+      await User.findByIdAndUpdate(
+        { _id: context.user._id },
+        { $push: { comments: comment._id } },
+        { new: true }
+      );
+
+      return comment;
+    }
+
+    throw new AuthenticationError('You need to be logged in!');
   },
   addReaction: async (parent, { CommentId, reactionBody }, context) => {
     if (context.user) {
