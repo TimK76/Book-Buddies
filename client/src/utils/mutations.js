@@ -88,7 +88,7 @@ export const ADD_REACTION = gql`
         reactionBody
         createdAt
         username
-
+`;
 
 export const ADD_COMMENT = gql`
   mutation addComment($commentText: String!) {
