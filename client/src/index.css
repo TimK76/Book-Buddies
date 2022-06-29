@@ -1,5 +1,5 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1,
@@ -8,10 +8,13 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .small {
-  font-weight: 300;
-  font-style: italic;
+  font-weight: 400;
+  font-style: bold;
+  background-color: navy;
+  color: white;
 }
+
