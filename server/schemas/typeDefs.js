@@ -62,6 +62,22 @@ const typeDefs = gql`
     reactions: [Reaction]
   }
 
+  type addComment {
+    _id: ID
+    commentText: String
+    createdAt: String
+    username: String
+    reactionCount: Int
+    reactions: [Reaction]
+  }
+
+  type addReaction {
+    _id: ID
+    reactionBody: String
+    createdAt: String
+    username: String
+  }
+  
   type Reaction {
     _id: ID
     reactionBody: String
