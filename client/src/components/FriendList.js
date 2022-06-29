@@ -2,14 +2,14 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 const bcrypt = require('bcrypt')
 
-class Member extends Model {
+class FriendList extends Model {
     // bcrypt
     checkPassword(loginPw) {
         return bcrypt.compareSync(loginPw, this.password);
     }
 };
 
-Member.init(
+FriendList.init(
     {
         id: {
             type: DataTypes.INTEGER,
@@ -54,8 +54,8 @@ Member.init(
         timestamps: false,
         freezeTableName: true,
         underscored: true,
-        modelName: 'friendlist'
+        modelName: 'FriendList'
     }
 );
 
-module.exports = friendlist;
+module.exports = FriendList;
