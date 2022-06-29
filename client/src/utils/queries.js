@@ -19,7 +19,7 @@ export const GET_ME = gql`
     }
   }
 `;
-export const GET_ME = gql`
+export const GET_friendlist = gql`
 {
     friendlist {
     _id
@@ -27,3 +27,4 @@ export const GET_ME = gql`
     email
   }
 }
+`;
