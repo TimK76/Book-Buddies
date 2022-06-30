@@ -1,10 +1,8 @@
 import React from 'react';
-import { Navigate, useParams } from 'react-router-dom';
-
+import { Link, useParams } from 'react-router-dom';
 import CommentForm from '../components/CommentForm';
 import CommentList from '../components/CommentList';
 import FriendList from '../components/FriendList';
-
 import { useQuery, useMutation } from '@apollo/client';
 import { QUERY_USER, QUERY_ME } from '../utils/queries';
 import { ADD_FRIEND } from '../utils/mutations';
@@ -20,9 +18,9 @@ const Profile = (props) => {
 
   const user = data?.me || data?.user || {};
 
-  // navigate to personal profile page if username is yours
+  // go to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Navigate to="/profile:username" />;
+    return <Link to="/profile:username" />;
   }
 
   if (loading) {

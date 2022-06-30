@@ -1,5 +1,5 @@
 {
-  "name": "googlebooks-app",
+  "name": "bookbuddies-app",
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -18,7 +18,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "if-env": "^1.0.4"
+    "if-env": "^1.0.4",
+    "react-router-dom": "^5.1.2"
   },
   "devDependencies": {
     "concurrently": "^5.2.0"
