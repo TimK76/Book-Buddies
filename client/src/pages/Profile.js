@@ -20,7 +20,7 @@ const Profile = (props) => {
 
   // go to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Link to="/profile:username" />;
+    return <Link to="/profile" />;
   }
 
   if (loading) {

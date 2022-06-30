@@ -69,10 +69,10 @@ export const QUERY_ME = gql`
         username
       }
       }
-      comments{
+    comments{
         _id
         commentText
-        createAt
+        createdAt
         reactionCount
         reactions {
           _id
@@ -81,8 +81,8 @@ export const QUERY_ME = gql`
           username
         }
       }
-      bookCount
-      savedBooks {
+    bookCount
+    savedBooks {
         bookId
         authors
         image
