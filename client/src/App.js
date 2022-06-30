@@ -6,7 +6,7 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import SingleComment from './pages/SingleComment';
 import Navbar from './components/Navbar';
-import FriendList from './components/FriendList';
+//import FriendList from './components/FriendList';
 
 const client = new ApolloClient({
   request: (operation) => {

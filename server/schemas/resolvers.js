@@ -66,19 +66,19 @@ const resolvers = {
       throw new AuthenticationError("You have to be logged in!");
     }
   },
-  addReaction: async (parent, { CommentId, reactionBody }, context) => {
-    if (context.user) {
-      const updatedComment = await Comment.findOneAndUpdate(
-        { _id: commentId },
-        { $push: { reactions: { reactionBody, username: context.user.username } } },
-        { new: true, runValidators: true }
-      );
+  // addReaction: async (parent, { CommentId, reactionBody }, context) => {
+  //   if (context.user) {
+  //     const updatedComment = await Comment.findOneAndUpdate(
+  //       { _id: commentId },
+  //       { $push: { reactions: { reactionBody, username: context.user.username } } },
+  //       { new: true, runValidators: true }
+  //     );
 
-      return updatedComment;
-    }
+  //     return updatedComment;
+  //   }
 
-    throw new AuthenticationError('You need to be logged in!');
-  },
+  //   throw new AuthenticationError('You need to be logged in!');
+  // },
 };
 
 module.exports = resolvers;
