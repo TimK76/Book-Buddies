@@ -13,12 +13,12 @@ const resolvers = {
     
       throw new AuthenticationError('Not logged in');
     },
-    users: async () => {
-      return User.find()
-        .select('-__v -password')
-        .populate('comments')
-        .populate('friends');
-    },
+    // users: async () => {
+    //   return User.find()
+    //     .select('-__v -password')
+    //     .populate('comments')
+    //     .populate('friends');
+    // },
     user: async (parent, { username }) => {
       return User.findOne({ username })
         .select('-__v -password')

@@ -20,21 +20,21 @@ const Profile = (props) => {
 
   // go to personal profile page if username is yours
   if (Auth.loggedIn() && Auth.getProfile().data.username === userParam) {
-    return <Link to="/profile:username" />;
+    return <Link to="/profile/:username" />;
   }
 
   if (loading) {
     return <div>Loading...</div>;
   }
-
-  if (!user?.username) {
-    return (
-      <h4>
-        You need to be logged in to see this. Use the navigation links above to
-        sign up or log in!
-      </h4>
-    );
-  }
+console.log(Auth.loggedIn());
+  // if (Auth.loggedIn()) {
+  //   return (
+  //     <h4>
+  //       You need to be logged in to see this. Use the navigation links above to
+  //       sign up or log in!
+  //     </h4>
+  //   );
+  // }
 
   const handleClick = async () => {
     try {
@@ -63,7 +63,7 @@ const Profile = (props) => {
       <div className="flex-row justify-space-between mb-3">
         <div className="col-12 mb-3 col-lg-8">
           <CommentList
-            comments={user.comments}
+            comments={user.comments || []}
             title={`${user.username}'s comments...`}
           />
         </div>
