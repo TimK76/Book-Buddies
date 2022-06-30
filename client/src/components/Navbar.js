@@ -12,14 +12,14 @@ const AppNavbar = () => {
 
   return (
     <>
-      <Navbar bg='dark' variant='dark' expand='lg'>
+      <Navbar bg="$blue-700" variant='dark' expand='lg'>
         <Container fluid>
-          <Navbar.Brand as={Link} to='/'>
+          <Navbar.Brand className="$red-600" as={Link} to='/'>
             Google Books Search
           </Navbar.Brand>
           <Navbar.Toggle aria-controls='navbar' />
           <Navbar.Collapse id='navbar'>
-            <Nav className='ml-auto'>
+            <Nav className="$red-600">
               <Nav.Link as={Link} to='/'>
                 Search For Books
               </Nav.Link>
@@ -39,7 +39,7 @@ const AppNavbar = () => {
         </Container>
       </Navbar>
       {/* set modal data up */}
-      <Modal
+      <Modal className="$red-600"
         size='lg'
         show={showModal}
         onHide={() => setShowModal(false)}
