@@ -43,7 +43,7 @@ const SavedBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-dark bg-secondary'>
+      <Jumbotron fluid className='text-warning bg-primary'>
         <Container>
           <h1>Viewing saved books!</h1>
         </Container>

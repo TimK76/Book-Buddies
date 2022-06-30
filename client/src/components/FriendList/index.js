@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 // } = require('graphql/type');
 const FriendList = ({ friendCount, username, friends }) => {
   if (!friends || !friends.length) {
-    return <p className="bg-dark text-light p-3">{username}, make some friends!</p>;
+    return <p className="bg-primary text-warning p-3">{username}, make some friends!</p>;
   }
   return (
     <div>
