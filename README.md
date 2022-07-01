@@ -6,7 +6,7 @@ Our application allows an avid reader to search for and save a list of their fav
 
 ## Installation
 
-To use this application, a reader can click on the following link:
+To use this application, a reader can click on the following link: https://safe-depths-04490.herokuapp.com/
 
 ## Usage
 
