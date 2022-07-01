@@ -87,7 +87,7 @@ const SearchBooks = () => {
 
   return (
     <>
-      <Jumbotron fluid className='text-warning bg-info'>
+      <Jumbotron fluid className='text-warning bg-primary'>
         <Container>
           <h1>Book Buddies</h1>
           <Form onSubmit={handleFormSubmit}>
@@ -103,7 +103,7 @@ const SearchBooks = () => {
                 />
               </Col>
               <Col xs={12} md={4}>
-                <Button type='submit' variant='secondary' size='lg'>
+                <Button type='submit' variant='warning' size='lg'>
                   Submit Search
                 </Button>
               </Col>
@@ -112,11 +112,11 @@ const SearchBooks = () => {
         </Container>
       </Jumbotron>
 
-      <Container>
+      <Container className='p-3 mb-2 bg-warning text-primary >.bg-secondary'>
         <h2>
           {searchedBooks.length
             ? `Viewing ${searchedBooks.length} results:`
-            : 'Begin  your search now, Buddies!'}
+            : 'Search now, Buds!'}
         </h2>
         <CardColumns>
           {searchedBooks.map((book) => {

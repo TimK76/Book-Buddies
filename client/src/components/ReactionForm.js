@@ -52,7 +52,7 @@ const ReactionForm = ({ commentId }) => {
           onChange={handleChange}
         ></textarea>
 
-        <button className="btn col-12 col-md-3" type="submit">
+        <button className="btn col-12 col-md-3" type="submit" variant='warning'>
           Submit
         </button>
       </form>
